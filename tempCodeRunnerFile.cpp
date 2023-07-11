@@ -1,0 +1,3 @@
+
+void add();
+ void sub();

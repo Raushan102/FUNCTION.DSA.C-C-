@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table, th, td {
+            /* border: 1px solid black; */
+            border-radius: 8px;
+            border-style:inherit;
+        }
+
+        table {
+           width: 50%;
+            border-spacing: 5px;
+        }
+
+        td,th {
+            text-align: center;
+            padding: 9px;
+        }
+
+        /* th {
+            background-color:bisque;
+        } */
+        /* table#t01 tr:nth-child(even) {
+            background-color: #ececaf;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: aliceblue;
+        } */
+
+        th {
+            background-color:aqua;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!---Table-->
+    <table id="t01" class="center">
+        <caption>
+            <h2>Monthly Saving Table</h2>
+        </caption>
+
+        <thead>
+            <colgroup>
+                <col span="2" style="background-color: blueviolet;">
+                <col span="2" style="background-color:darkorange">
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>Monthly</th>
+                <th>Per Week</th>
+                <th>Per Day</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>January</th>
+                <td>3,000$</td>
+                <td>750$</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>February</th>
+                <td>3,000$</td>
+                <td>750$</td> -->
+                <td colspan="2">ColSpan</td>
+            </tr>
+            <tr>
+                <th>March</th>
+                <td>3,000$</td>
+                <td>750$</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>April</th>
+                <td>3,000$</td>
+                <td>750$</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>May</th>
+                <td>3,000$</td>
+                <td>750$</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>Jun</th>
+                <td>3,000$</td>
+                <td>750$</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>July</th>
+                <td>3,000$</td>
+                <td>750$</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>August</th>
+                <td>3,000$</td>
+                <td rowspan="3">rowspan</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>September</th>
+                <td>3,000$</td>
+                <!-- <td>750$</td> -->
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>October</th>
+                <td>3,000$</td>
+                <!-- <td>750$</td> -->
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>November</th>
+                <td>3,000$</td>
+                <td>750$</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <th>December</th>
+                <td>3,000$</td>
+                <td>750$</td>
+                <td>100$</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total:</th>
+                <th>36,000$</th>
+                <th>36,000$</th>
+                <th>36,000$</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
